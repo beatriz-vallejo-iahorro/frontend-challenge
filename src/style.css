@@ -1,0 +1,31 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 24px;
+}
+
+.simulador {
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.simulador input {
+  display: block;
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.boton {
+  background: #00a19a;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  margin-top: 8px;
+}
