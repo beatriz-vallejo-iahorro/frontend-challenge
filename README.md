@@ -38,10 +38,10 @@ Además del código, entrega:
 
 Los tickets son ficticios, pero están escritos como los de un equipo real. Como en cualquier proyecto real, los tickets y la documentación pueden tener errores o contradicciones. Si encuentras alguna, decide qué hacer y explícalo en `DECISIONS.md`.
 
-Si no te da tiempo a todo, empieza por lo que más impacto tenga para quien usa el simulador y deja escrito qué harías después.
+Si decides no hacerlo todo, empieza por lo que más impacto tenga para quien usa el simulador y deja escrito qué harías después.
 
 ## Reglas
-- **Tiempo:** unas **3 horas**. No buscamos que lo termines todo, sino ver cómo priorizas. Indica en la PR cuánto tiempo has dedicado.
+- **Alcance:** no buscamos que lo termines todo, sino ver cómo priorizas. Dedícale el tiempo que consideres razonable; lo hablaremos en la entrevista.
 - **Sin frameworks.** TypeScript, el DOM y lo que ya hay en el repo. En el equipo trabajamos con Vue y con Angular, y no queremos que la prueba favorezca a nadie. El framework lo hablaremos en la entrevista.
 - **Dependencias nuevas:** solo si las justificas en `DECISIONS.md`.
 - **Convenciones del repo:** en [`AGENTS.md`](AGENTS.md).
@@ -69,7 +69,7 @@ npm run lint
 ¿No quieres instalar nada? Abre el repo en GitHub Codespaces (botón **Code → Codespaces**).
 
 ## Diseño (opcional)
-Hay un diseño de referencia en [`docs/diseno.png`](docs/diseno.png) con los colores, la tipografía y los estilos de iAhorro: escritorio, móvil con el aviso de financiación y móvil con errores. Maquetarlo **no es obligatorio**; si te sobra tiempo, es un buen extra. Si el diseño y un ticket no coinciden, manda el ticket.
+Hay un diseño de referencia en [`docs/diseno.png`](docs/diseno.png) con los colores, la tipografía y los estilos de iAhorro: escritorio, móvil con el aviso de financiación y móvil con errores. Maquetarlo **no es obligatorio**; si te apetece, es un buen extra. Si el diseño y un ticket no coinciden, manda el ticket.
 
 ## Cómo entregar
 1. Pulsa **Use this template → Create a new repository** y créalo como **privado** en tu cuenta. No lo hagas público ni lo compartas: así la prueba sigue siendo justa para los demás.
@@ -82,7 +82,7 @@ Hay un diseño de referencia en [`docs/diseno.png`](docs/diseno.png) con los col
 Cuando termine el proceso, puedes borrar el repo.
 
 ## Cómo es el proceso
-1. **Prueba (esta fase):** hasta 7 días para entregar, unas 3 horas de trabajo.
+1. **Prueba (esta fase):** hasta 7 días para entregar.
 2. **Revisión:** revisamos tu PR como revisaríamos una del equipo. Nos apoyamos en herramientas de IA (ejecución de tests, análisis del código), pero las valoraciones y la decisión las toman **siempre personas**.
 3. **Defensa (unos 50 minutos), si pasas a la siguiente fase:**
    - Nos enseñas tu PR y hablamos de tus decisiones.

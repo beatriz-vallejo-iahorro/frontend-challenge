@@ -7,7 +7,4 @@
 ## Cómo probarlo
 <!-- Pasos para comprobarlo a mano. -->
 
-## Tiempo dedicado
-<!-- Aproximado. -->
-
 ## Riesgos o pendientes
