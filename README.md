@@ -69,7 +69,12 @@ npm run lint
 ¿No quieres instalar nada? Abre el repo en GitHub Codespaces (botón **Code → Codespaces**).
 
 ## Diseño (opcional)
-Hay un diseño de referencia en [`docs/diseno.png`](docs/diseno.png) con los colores, la tipografía y los estilos de iAhorro: escritorio, móvil con el aviso de financiación y móvil con errores. Maquetarlo **no es obligatorio**; si te apetece, es un buen extra. Si el diseño y un ticket no coinciden, manda el ticket.
+Hay dos referencias. Maquetarlas **no es obligatorio**; si te apetece, es un buen extra.
+
+- [Figma de la calculadora de cuota](https://www.figma.com/design/sOzJ1Sm9LOhojiGK6nfzOH/Prueba-Front?node-id=0-1): el diseño de la calculadora de la web, con el sistema de diseño de iAhorro en escritorio, tablet y móvil. Es el producto completo, así que incluye cosas que estos tickets no piden.
+- [`docs/diseno.png`](docs/diseno.png): el formulario de los tickets, con el aviso de financiación y los errores de validación.
+
+Si un diseño y un ticket no coinciden, manda el ticket. Si decides algo al respecto, cuéntalo en `DECISIONS.md`.
 
 ## Cómo entregar
 1. Pulsa **Use this template → Create a new repository** y créalo como **privado** en tu cuenta. No lo hagas público ni lo compartas: así la prueba sigue siendo justa para los demás.
