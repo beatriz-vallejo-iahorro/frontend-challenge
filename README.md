@@ -32,7 +32,7 @@ Los tickets están en [`docs/tickets/`](docs/tickets/). En este orden de priorid
 | 3 | [Diseño](#diseño) | Maquetación | La caja de resultados del Figma |
 | 4 | [SIM-102](docs/tickets/SIM-102.md) | Historia | Comparar hipoteca fija y variable |
 
-**Lo mínimo para entregar son los tres primeros.** Si no llegas a SIM-102, maqueta la caja de resultados con la pestaña "Hipoteca fija" y la cuota que ya calcula el simulador. SIM-102 suma, pero no es imprescindible. La prueba está pensada para unas 4-5 horas. No es un límite: si ves que te pasas mucho, para y cuéntanos en la PR qué harías después.
+**Lo mínimo para entregar son los tres primeros.** Si no llegas a SIM-102, maqueta la caja de resultados con la pestaña "Hipoteca fija" y la cuota que ya calcula el simulador. SIM-102 suma, pero no es imprescindible.
 
 El único entregable escrito es **la descripción de la PR**, con su plantilla: qué has hecho y cómo probarlo, tus decisiones y preguntas, lo que has dejado fuera y cómo has usado la IA.
 
