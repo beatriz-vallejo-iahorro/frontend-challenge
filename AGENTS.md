@@ -4,7 +4,7 @@ Para personas y para agentes de IA.
 
 ## Código
 - TypeScript estricto. Nada de `any`.
-- Sin frameworks ni librerías de UI. Una dependencia nueva solo con justificación en `DECISIONS.md`.
+- Sin frameworks ni librerías de UI. Una dependencia nueva solo con justificación en la descripción de la PR.
 - Lógica de negocio en `src/domain/`: funciones puras, sin acceso al DOM. Interfaz en `src/ui/`.
 - Importes en euros con `Intl.NumberFormat('es-ES', { style: 'currency', currency: 'EUR' })`. Nada de concatenar `' €'`.
 - Textos de la interfaz en español.

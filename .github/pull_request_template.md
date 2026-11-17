@@ -1,10 +1,11 @@
-## Qué
-<!-- Qué cambia esta PR. Tickets que cubre. -->
+## Qué y cómo probarlo
+<!-- Tickets que cubre esta PR y pasos para comprobarlo a mano. -->
 
-## Por qué
-<!-- Decisiones importantes. El detalle va en DECISIONS.md. -->
+## Decisiones y preguntas
+<!-- Supuestos que has tomado, contradicciones que has encontrado y qué le preguntarías a producto o a diseño. Si añades una dependencia, justifícala aquí. -->
 
-## Cómo probarlo
-<!-- Pasos para comprobarlo a mano. -->
+## Qué he dejado fuera
+<!-- Lo que no has hecho, por qué y qué harías después. -->
 
-## Riesgos o pendientes
+## Uso de IA
+<!-- Herramientas y para qué; los 2-3 prompts que más te han servido; al menos una cosa que la IA hizo mal y cómo te diste cuenta; qué has escrito o reescrito tú. Si no has usado IA, cuéntalo. -->

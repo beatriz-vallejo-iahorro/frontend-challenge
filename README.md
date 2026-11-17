@@ -25,29 +25,29 @@ Una entrega parcial, bien priorizada y bien explicada vale más que una completa
 ## Qué tienes que hacer
 Los tickets están en [`docs/tickets/`](docs/tickets/):
 
-| Ticket | Tipo | Resumen |
-|---|---|---|
-| [SIM-101](docs/tickets/SIM-101.md) | Error | La cuota sale `NaN` con TIN 0 % y redondea mal |
-| [SIM-102](docs/tickets/SIM-102.md) | Historia | Comparar hipoteca fija y variable |
-| [SIM-103](docs/tickets/SIM-103.md) | Historia | Accesibilidad del formulario |
+En este orden de prioridad:
 
-Además del código, entrega:
-- **La descripción de la PR:** qué has hecho, por qué y cómo probarlo. Hay plantilla.
-- **[`DECISIONS.md`](DECISIONS.md):** supuestos que has tomado, preguntas que le habrías hecho a producto y lo que has dejado fuera.
-- **[`AI_USAGE.md`](AI_USAGE.md):** cómo has usado la IA (ver más abajo).
+| # | Ticket | Tipo | Resumen |
+|---|---|---|---|
+| 1 | [SIM-101](docs/tickets/SIM-101.md) | Error | La cuota sale `NaN` con TIN 0 % y redondea mal |
+| 2 | [SIM-103](docs/tickets/SIM-103.md) | Historia | Accesibilidad del formulario |
+| 3 | [SIM-102](docs/tickets/SIM-102.md) | Historia | Comparar hipoteca fija y variable |
+| 4 | [Diseño](#diseño) | Maquetación | La caja de resultados del Figma |
 
-Los tickets son ficticios, pero están escritos como los de un equipo real. Como en cualquier proyecto real, los tickets y la documentación pueden tener errores o contradicciones. Si encuentras alguna, decide qué hacer y explícalo en `DECISIONS.md`.
+**Con SIM-101 y SIM-103 bien hechos ya puedes entregar.** Lo demás suma, pero no es imprescindible. La prueba está pensada para unas 4-5 horas. No es un límite: si ves que te pasas mucho, para y cuéntanos en la PR qué harías después.
 
-Si decides no hacerlo todo, empieza por lo que más impacto tenga para quien usa el simulador y deja escrito qué harías después.
+El único entregable escrito es **la descripción de la PR**, con su plantilla: qué has hecho y cómo probarlo, tus decisiones y preguntas, lo que has dejado fuera y cómo has usado la IA.
+
+Los tickets son ficticios, pero están escritos como los de un equipo real. Como en cualquier proyecto real, los tickets y la documentación pueden tener errores o contradicciones. Si encuentras alguna, decide qué hacer y explícalo en la PR.
 
 ## Reglas
-- **Alcance:** no buscamos que lo termines todo, sino ver cómo priorizas. Dedícale el tiempo que consideres razonable; lo hablaremos en la entrevista.
+- **Alcance:** no buscamos que lo termines todo, sino ver cómo priorizas. Una entrega parcial bien explicada cuenta igual que una completa.
 - **Sin frameworks.** TypeScript, el DOM y lo que ya hay en el repo. En el equipo trabajamos con Vue y con Angular, y no queremos que la prueba favorezca a nadie. El framework lo hablaremos en la entrevista.
-- **Dependencias nuevas:** solo si las justificas en `DECISIONS.md`.
+- **Dependencias nuevas:** solo si las justificas en la PR.
 - **Convenciones del repo:** en [`AGENTS.md`](AGENTS.md).
 
 ## Sobre la IA
-**Usar IA está permitido y esperado.** Nos interesa cómo trabajas con ella, no si la usas. En `AI_USAGE.md` cuéntanos:
+**Usar IA está permitido y esperado.** Nos interesa cómo trabajas con ella, no si la usas. En la PR cuéntanos:
 - Qué herramientas has usado y para qué.
 - Los 2-3 prompts que más te hayan servido.
 - Al menos una cosa que la IA hizo mal y cómo te diste cuenta.
@@ -68,13 +68,18 @@ npm run lint
 
 ¿No quieres instalar nada? Abre el repo en GitHub Codespaces (botón **Code → Codespaces**).
 
-## Diseño (opcional)
-Hay dos referencias. Maquetarlas **no es obligatorio**; si te apetece, es un buen extra.
+## Diseño
+El [Figma de la calculadora de cuota](https://www.figma.com/design/sOzJ1Sm9LOhojiGK6nfzOH/Prueba-Front?node-id=0-1) es el diseño de la calculadora de la web, con el sistema de diseño de iAhorro. Es el producto completo, así que solo se maqueta una parte:
 
-- [Figma de la calculadora de cuota](https://www.figma.com/design/sOzJ1Sm9LOhojiGK6nfzOH/Prueba-Front?node-id=0-1): el diseño de la calculadora de la web, con el sistema de diseño de iAhorro en escritorio, tablet y móvil. Es el producto completo, así que incluye cosas que estos tickets no piden.
-- [`docs/diseno.png`](docs/diseno.png): el formulario de los tickets, con el aviso de financiación y los errores de validación.
+| Se maqueta | No se maqueta |
+|---|---|
+| La caja de resultados: pestañas "Hipoteca fija" e "Hipoteca variable", la cuota, el tipo, el importe a financiar y la letra pequeña | El formulario del Figma (sliders, desplegable y radios): el formulario es el de los tickets, con inputs sencillos |
+| Escritorio (1440 px) y móvil (375 px) | Tablet |
+| | El desglose (ahorro, entrada, impuestos, intereses), la gráfica, "Amortización de la hipoteca" y el bloque de "Consígueme esta hipoteca" |
 
-Si un diseño y un ticket no coinciden, manda el ticket. Si decides algo al respecto, cuéntalo en `DECISIONS.md`.
+Usa los tokens del Figma (colores, tipografía, espaciados, radios). Lo que no tiene diseño (el aviso de financiación, los errores y el foco) se resuelve con esos mismos tokens; [`docs/diseno.png`](docs/diseno.png) sirve de referencia para el aviso y los errores.
+
+Si el diseño y un ticket no coinciden, manda el ticket. Si decides algo al respecto, cuéntalo en la PR.
 
 ## Cómo entregar
 1. Pulsa **Use this template → Create a new repository** y créalo como **privado** en tu cuenta. No lo hagas público ni lo compartas: así la prueba sigue siendo justa para los demás.
