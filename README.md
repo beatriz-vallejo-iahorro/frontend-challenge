@@ -30,16 +30,17 @@ Los tickets están en [`docs/tickets/`](docs/tickets/). En este orden de priorid
 | 1 | [SIM-101](docs/tickets/SIM-101.md) | Error | La cuota sale `NaN` con TIN 0 % y redondea mal |
 | 2 | [SIM-103](docs/tickets/SIM-103.md) | Historia | Accesibilidad del formulario |
 | 3 | [Diseño](#diseño) | Maquetación | La caja de resultados del Figma |
-| 4 | [SIM-102](docs/tickets/SIM-102.md) | Historia | Comparar hipoteca fija y variable |
+| 4 | [SIM-104](docs/tickets/SIM-104.md) | Historia | Precio y ahorros con deslizador |
+| 5 | [SIM-102](docs/tickets/SIM-102.md) | Historia | Comparar hipoteca fija y variable |
 
-**Lo mínimo para entregar son los tres primeros.** Si no llegas a SIM-102, maqueta la caja de resultados con la pestaña "Hipoteca fija" y la cuota que ya calcula el simulador. SIM-102 suma, pero no es imprescindible.
+**Lo mínimo para entregar son los tres primeros.** SIM-104 y SIM-102 suman, pero no son imprescindibles.
 
 El único entregable escrito es **la descripción de la PR**, con su plantilla: qué has hecho y cómo probarlo, tus decisiones y preguntas, lo que has dejado fuera y cómo has usado la IA.
 
 Los tickets son ficticios, pero están escritos como los de un equipo real. Como en cualquier proyecto real, los tickets y la documentación pueden tener errores o contradicciones. Si encuentras alguna, decide qué hacer y explícalo en la PR.
 
 ## Reglas
-- **Alcance:** no buscamos que lo termines todo, sino ver cómo priorizas. Una entrega parcial bien explicada cuenta igual que una completa.
+- **Alcance:** no buscamos que lo termines todo, sino ver cómo priorizas. Lo que dejes sin hacer, por encima del mínimo, no resta si lo explicas en la PR.
 - **Sin frameworks.** TypeScript, el DOM y lo que ya hay en el repo. En el equipo trabajamos con Vue y con Angular, y no queremos que la prueba favorezca a nadie. El framework lo hablaremos en la entrevista.
 - **Dependencias nuevas:** solo si las justificas en la PR.
 - **Convenciones del repo:** en [`AGENTS.md`](AGENTS.md).
@@ -71,7 +72,8 @@ El [Figma de la calculadora de cuota](https://www.figma.com/design/sOzJ1Sm9LOhoj
 
 | Se maqueta | No se maqueta |
 |---|---|
-| La caja de resultados: pestañas "Hipoteca fija" e "Hipoteca variable", la cuota, el tipo, el importe a financiar y la letra pequeña | El formulario del Figma (sliders, desplegable y radios): el formulario es el de los tickets, con inputs sencillos |
+| La caja de resultados: la cuota, el tipo, el importe a financiar y la letra pequeña | Las pestañas "Hipoteca fija" e "Hipoteca variable": la cuota variable va en una línea más (SIM-102) |
+| Si haces SIM-104, el campo de importe con deslizador ("textinput+slider"). El marcado ya está en `src/ui/campo-importe.ts`: no hay que crearlo, solo darle estilos | El resto del formulario del Figma (desplegable y radios). El plazo y el TIN son cajas de texto nativas: no hace falta replicar ningún componente |
 | Escritorio (1440 px) y móvil (375 px) | Tablet |
 | | El desglose (ahorro, entrada, impuestos, intereses), la gráfica, "Amortización de la hipoteca" y el bloque de "Consígueme esta hipoteca" |
 

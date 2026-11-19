@@ -1,11 +1,12 @@
 import { calcularCuota, porcentajeFinanciacion } from '../domain/hipoteca';
+import { campoImporte } from './campo-importe';
 
 export function montarSimulador(root: HTMLElement): void {
   root.innerHTML = `
     <div class="simulador">
       <h1>Simulador de hipoteca</h1>
-      <input id="precio" type="number" placeholder="Precio de la vivienda" />
-      <input id="ahorros" type="number" placeholder="Ahorros aportados" />
+      ${campoImporte({ id: 'precio', etiqueta: 'Precio de la vivienda', min: 50000, max: 1000000, paso: 1000, valor: 200000 })}
+      ${campoImporte({ id: 'ahorros', etiqueta: 'Ahorros aportados', min: 0, max: 500000, paso: 1000, valor: 50000 })}
       <input id="plazo" type="number" placeholder="Plazo (años)" value="30" />
       <input id="tin" type="number" placeholder="TIN (%)" step="0.01" />
       <div class="boton" id="calcular">Calcular</div>
