@@ -77,7 +77,7 @@ El [Figma de la calculadora de cuota](https://www.figma.com/design/sOzJ1Sm9LOhoj
 | Escritorio (1440 px) y móvil (375 px) | Tablet |
 | | El desglose (ahorro, entrada, impuestos, intereses), la gráfica, "Amortización de la hipoteca" y el bloque de "Consígueme esta hipoteca" |
 
-Usa los tokens del Figma (colores, tipografía, espaciados, radios). Lo que no tiene diseño (el aviso de financiación, los errores y el foco) se resuelve con esos mismos tokens; [`docs/diseno.png`](docs/diseno.png) sirve de referencia para el aviso y los errores.
+Usa los tokens del Figma (colores, tipografía, espaciados, radios). Lo que no tiene diseño (el aviso de financiación, los errores y el foco) se resuelve con esos mismos tokens.
 
 Si el diseño y un ticket no coinciden, manda el ticket. Si decides algo al respecto, cuéntalo en la PR.
 
