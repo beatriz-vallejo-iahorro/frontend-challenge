@@ -55,7 +55,7 @@ Los tickets son ficticios, pero están escritos como los de un equipo real. Como
 Si no usas IA, también vale: cuéntalo.
 
 ## Cómo arrancar
-Necesitas Node 22 (versión en `.nvmrc`; vale `nvm use`).
+Necesitas Node 24 (versión en `.nvmrc`; vale `nvm use`).
 
 ```bash
 npm ci
@@ -65,7 +65,7 @@ npm run typecheck
 npm run lint
 ```
 
-¿No quieres instalar nada? Abre el repo en GitHub Codespaces (botón **Code → Codespaces**).
+¿No quieres instalar nada? Abre el repo en GitHub Codespaces (botón **Code → Codespaces**): arranca con Node 24 y las dependencias ya instaladas, así que basta con `npm run dev`.
 
 ## Diseño
 El [Figma de la calculadora de cuota](https://www.figma.com/design/sOzJ1Sm9LOhojiGK6nfzOH/Prueba-Front?node-id=0-1) es el diseño de la calculadora de la web, con el sistema de diseño de iAhorro. Es el producto completo, así que solo se maqueta una parte:
